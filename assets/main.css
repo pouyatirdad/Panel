@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.topNav {
+  grid-area: nav;
+  background-color: #f2f8ff;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+}
+
+.leftSide {
+  grid-area: side;
+  background-color: #ffffff;
+  height: 100%^;
+}
+
+.main {
+  grid-area: main;
+  background-color: rgba(0, 0, 255, 0.247);
+  height: 91vh;
+}
+
+.MyContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "side nav nav nav nav nav"
+    "side main main main main main"
+    "side main main main main main";
+}
+
+.NavBar {
+  background-color: #fff;
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavBar ul {
+  display: flex;
+  align-items: center;
+}
+
+.NavBar ul li {
+  margin-left: 6px;
+  padding: 10px 12px;
+}
+
+.NavBar ul:first-child li:first-child {
+  background-color: #038bc6;
+  border-radius: 11px;
+}
+
+.NavBar ul:first-child li:first-child a {
+  color: white;
+}
+
+.NavBar ul:nth-child(2) li {
+  border-left: 1px solid #f0f1f9;
+  position: relative;
+}
+
+.NumForBell {
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  background-color: #e4305d;
+  color: white;
+  padding: 4px 8px;
+  font-size: 8px;
+  border-radius: 20px;
+}
+
+.leftSide {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.leftSide ul li {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.leftSide ul li a {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #d2d6e0;
+}
+
+.leftSide ul:first-child li:first-child a {
+  color: white;
+  background-color: #048ac5;
+  border-radius: 20px;
+  padding: 5px 12px;
+}
+
+.leftSide ul li a .active {
+  color: #048ac5;
+  position: relative;
+}
+
+.leftSide ul li .active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #048ac5;
+  top: 0;
+  left: -60%;
+}
+
+.leftSide ul:nth-child(2) {
+  position: relative;
+  top: 29px;
+}
+
+.leftSide ul li a .DangerColor {
+  color: #e74444;
+  position: relative;
+}
