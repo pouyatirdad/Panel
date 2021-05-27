@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+
     <link rel="stylesheet" href="assets/main.css">
 </head>
 
@@ -125,7 +129,142 @@
         </div>
 
         <div class="main">
-            main
+            <div class="MainData">
+                <ul class="LeftofMain">
+                    <li class="NavBarForMain">
+                        <h3>Dashboard</h3>
+                        <h3>
+                            <i class="CircleDots"></i>
+                            <i class="CircleDots"></i>
+
+                        </h3>
+                    </li>
+
+                    <li class="SumDataIcon">
+
+                        <div class="items">
+                            <i class="fa fa-user"></i>
+                            <div>
+                                <h5>Total Patient</h5>
+                                <h5>2,000</h5>
+                            </div>
+                        </div>
+
+                        <div class="items">
+                            <i class="fa fa-heart"></i>
+                            <div>
+                                <h5>Total Staffs</h5>
+                                <h5>2,000</h5>
+                            </div>
+                        </div>
+
+                        <div class="items">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h5>Total Room</h5>
+                                <h5>2,000</h5>
+                            </div>
+                        </div>
+
+                        <div class="items">
+                            <i class="fa fa-car"></i>
+                            <div>
+                                <h5>Total Cars</h5>
+                                <h5>2,000</h5>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="NavBarForMain">
+                        <h3>Patient Statistics</h3>
+                        <h3>
+                            <i class="CircleDots"></i>
+                            <i class="CircleDots"></i>
+
+                        </h3>
+                    </li>
+
+                    <li class="PTStatistics">
+
+                        <ul>
+                            <li>
+                                <i class="fa fa-coins"></i>
+                            </li>
+                            <li>
+                                3,000
+                            </li>
+                            <li>
+                                2,000
+                            </li>
+                            <li>
+                                1,000
+                            </li>
+                            <li>
+                                0
+                            </li>
+
+                        </ul>
+
+                        <ul>
+
+                            <li>
+
+                                <div>
+                                    20 - 21 Nov, 2021
+                                </div>
+
+                                <div>
+                                    <h5>Year</h5>
+                                    <h5>Mouth</h5>
+                                    <h5>Week</h5>
+                                </div>
+
+                            </li>
+
+                            <table class="charts-css line" id="my-chart">
+
+                                <tbody>
+                                    <tr>
+                                        <td style="--start: 0.0; --size: 0.4"> <span class="data"> 2K </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="--start: 0.4; --size: 0.2"> <span class="data"> 1K </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="--start: 0.2; --size: 0.6"> <span class="data"> 3K </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="--start: 0.6; --size: 0.4"> <span class="data"> 2K </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="position: absolute;top: 88px; --size: 0.8"> <span class="data">
+                                            </span> </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                            <div>
+
+                            </div>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <ul class="RightofMain">
+                    <li class="NavBarForReports">
+                        <h3>
+                            Reports
+                        </h3>
+                        <h3>
+                            <i class="fa fa-drafting-compass"></i>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </div>

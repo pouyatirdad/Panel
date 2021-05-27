@@ -32,18 +32,18 @@ li {
 
 .main {
   grid-area: main;
-  background-color: rgba(0, 0, 255, 0.247);
+  background-color: #f2f8ff;
   height: 91vh;
 }
 
 .MyContainer {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
   display: grid;
   grid-template-areas:
-    "side nav nav nav nav nav"
-    "side main main main main main"
-    "side main main main main main";
+    "side nav nav nav nav nav "
+    "side main main main main main "
+    "side main main main main main ";
 }
 
 .NavBar {
@@ -94,10 +94,10 @@ li {
 }
 
 .leftSide {
-  margin: 20px auto;
+  margin: 20px 0px 0 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   position: relative;
 }
@@ -120,12 +120,13 @@ li {
   padding: 5px 12px;
 }
 
-.leftSide ul li a .active {
+.leftSide ul li.active {
   color: #048ac5;
+  border-right: 2px solid #048ac5;
   position: relative;
 }
 
-.leftSide ul li .active::after {
+/* .leftSide ul li .active::after {
   content: "";
   display: block;
   position: absolute;
@@ -134,14 +135,142 @@ li {
   background-color: #048ac5;
   top: 0;
   left: -60%;
-}
+} */
 
 .leftSide ul:nth-child(2) {
-  position: relative;
-  top: 29px;
+  /* position: relative;
+  top: 29px; */
 }
 
 .leftSide ul li a .DangerColor {
   color: #e74444;
   position: relative;
+}
+
+.MainData {
+  /* background-color: #fff; */
+  width: 90%;
+  margin: auto;
+  height: 94%;
+  margin: auto;
+  border-radius: 4px;
+  /* padding: 12px; */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  /* display: flex;
+  flex-direction: column; */
+}
+.LeftofMain {
+  margin-right: 5%;
+}
+
+.NavBarForMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  color: #000;
+}
+.NavBarForReports {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  color: #000;
+}
+
+.SumDataIcon {
+  display: grid;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px 50px;
+  border-radius: 3px;
+  height: 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.SumDataIcon .items {
+  display: flex;
+  justify-content: center;
+}
+
+.SumDataIcon .items i {
+  background-color: #fd686b;
+  border-radius: 100px;
+  padding: 10px;
+  margin: auto;
+  color: #fff;
+}
+
+.SumDataIcon .items div {
+  margin: auto;
+}
+
+.SumDataIcon .items div h5:first-child {
+  color: #9a9faf;
+}
+
+.SumDataIcon .items div h5:last-child {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.CircleDots {
+  content: "";
+  display: inline-block;
+  background-color: #9fa7bb;
+  border-radius: 200px;
+  width: 9px;
+  height: 9px;
+}
+
+.PTStatistics {
+  display: grid;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px 50px;
+  border-radius: 3px;
+  height: 250px;
+  grid-template-columns: 0.5fr 3fr;
+}
+
+#my-chart.line {
+  height: 220px;
+  /* max-width: 400px; */
+  margin: 0 auto;
+  position: relative;
+  top: -35px;
+}
+
+.PTStatistics ul {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -13px;
+}
+
+.PTStatistics ul li {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+.charts-css .data {
+  position: relative;
+  top: -10px;
+  left: -1px;
+}
+
+.PTStatistics ul:nth-child(2) li:first-child {
+  margin: 30px 0 0 0;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PTStatistics ul:nth-child(2) li:first-child div:last-child {
+  display: flex;
+}
+
+.PTStatistics ul:nth-child(2) li:first-child div:last-child h5 {
+  margin-left: 12px;
 }
