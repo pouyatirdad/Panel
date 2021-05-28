@@ -1,11 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 13;
+  background-color: #f2f8ff;
 }
 
 a {
@@ -27,7 +29,7 @@ li {
 .leftSide {
   grid-area: side;
   background-color: #ffffff;
-  height: 100%^;
+  height: 100%;
 }
 
 .main {
@@ -48,7 +50,7 @@ li {
 
 .NavBar {
   background-color: #fff;
-  width: 90%;
+  width: 83%;
   height: 40%;
   margin: auto;
   border-radius: 4px;
@@ -66,6 +68,10 @@ li {
 .NavBar ul li {
   margin-left: 6px;
   padding: 10px 12px;
+}
+
+.NavBar ul li a {
+  color: #9fa7bb;
 }
 
 .NavBar ul:first-child li:first-child {
@@ -94,12 +100,13 @@ li {
 }
 
 .leftSide {
-  margin: 20px 0px 0 0;
+  padding: 20px 0 20px 10px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  width: 5%;
 }
 
 .leftSide ul li {
@@ -149,7 +156,7 @@ li {
 
 .MainData {
   /* background-color: #fff; */
-  width: 90%;
+  width: 84%;
   margin: auto;
   height: 94%;
   margin: auto;
@@ -200,6 +207,18 @@ li {
   color: #fff;
 }
 
+.SumDataIcon .items:nth-child(2) i {
+  background-color: #ff8919;
+}
+
+.SumDataIcon .items:nth-child(3) i {
+  background-color: #038ac6;
+}
+
+.SumDataIcon .items:nth-child(4) i {
+  background-color: #209cff;
+}
+
 .SumDataIcon .items div {
   margin: auto;
 }
@@ -238,7 +257,16 @@ li {
   /* max-width: 400px; */
   margin: 0 auto;
   position: relative;
+  --color: #209cff;
   top: -35px;
+}
+
+#colors-example-8 {
+  height: 200px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 10px;
+  --color: #209cff;
 }
 
 .PTStatistics ul {
@@ -273,4 +301,180 @@ li {
 
 .PTStatistics ul:nth-child(2) li:first-child div:last-child h5 {
   margin-left: 12px;
+}
+
+.tableForLastPatients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.tableForLastPatients li {
+  text-align: center;
+}
+
+.tableForLastPatients li div:first-child {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #747474;
+}
+
+.tableForLastPatients li ul {
+  padding: 10px 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
+}
+
+.tableForLastPatients li ul li {
+  padding: 10px 0px;
+}
+
+.tableForLastPatients li ul li i:last-child {
+  color: #e95d80;
+}
+
+.tableForLastPatients li ul li i:first-child {
+  color: #929292;
+  margin-right: 3px;
+}
+
+.fa-drafting-compass {
+  color: #9fa7bb;
+}
+
+.RightofMain ul li {
+  border-radius: 5px;
+  height: 80px;
+  width: 95%;
+  margin: 0px auto 20px auto;
+  background-color: #fff;
+  padding: 14px;
+}
+
+.RightofMain ul li div:first-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.RightofMain ul li div:first-child .fa-bell {
+  background-color: #fff2f2;
+  color: #df8e8c;
+  border-radius: 100px;
+  margin: auto;
+  padding: 10px;
+}
+
+.RightofMain ul li div:first-child h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.RightofMain ul li div:first-child p {
+  display: inline-flex;
+  position: relative;
+  top: 5px;
+}
+
+.RightofMain ul li div:first-child p i:first-child {
+  margin-right: 3px;
+}
+
+.RightofMain ul li div:last-child {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 19px;
+}
+
+.RightofMain ul li div:last-child p {
+  color: #747474;
+  font-weight: 400;
+}
+
+.RightofMain ul li div:last-child h4 {
+  color: #038bc6;
+  font-weight: 500;
+}
+
+.RightofMain ul li div:last-child h4 i {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+
+.CircleDotsSm {
+  content: "";
+  display: inline-block;
+  background-color: #9fa7bb;
+  border-radius: 200px;
+  width: 6px;
+  height: 6px;
+}
+.INOUT {
+  border-radius: 5px;
+  /* height: 100px; */
+  width: 95%;
+  margin: 0px auto 20px auto;
+  background-color: #fff;
+  padding: 14px;
+}
+.INOUT div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.INOUT div:first-child {
+  margin-bottom: 40px;
+}
+.INOUT div i {
+  background-color: #f3f7fd;
+  border: 1px solid #c6eeff9d;
+  border-radius: 100px;
+  color: #048ac5;
+  margin: auto;
+  padding: 12px;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+}
+
+.INOUT div:last-child i {
+  background-color: #f6faff;
+  border: 1px solid #e2bbc585;
+  border-radius: 100px;
+  color: #e4305d;
+  margin: auto;
+  padding: 12px;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+}
+
+.INOUT div ul {
+  text-align: center;
+}
+.INOUT div ul p {
+  color: #747474;
+}
+.INOUT div ul h3 {
+  font-weight: 700;
+}
+
+#orientation-example-5 {
+  height: 50px;
+  max-width: 140px;
+  margin: 0 auto;
+  --color: #209cff;
+}
+
+#orientation-example-6 {
+  height: 50px;
+  max-width: 140px;
+  margin: 0 auto;
+  --color: #e4305d;
 }
