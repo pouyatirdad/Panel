@@ -478,3 +478,63 @@ li {
   margin: 0 auto;
   --color: #e4305d;
 }
+#EditModel {
+  display: none;
+}
+.ModelBG {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.342);
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
+.Modal {
+  position: fixed;
+  left: 40%;
+  top: 0;
+  margin: 60px auto auto auto;
+  width: 400px;
+  /* height: 400px; */
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 101;
+}
+.Modal h3 {
+  padding: 4px 10px;
+  border-bottom: 1px solid #747474;
+}
+
+.Modal div {
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.Modal span {
+  display: block;
+  padding: 4px 20px;
+  margin-top: 20px;
+}
+
+.Modal span button {
+  background-color: #45d481;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.Modal span button:hover {
+  opacity: 0.8;
+}
+
+.fa-pen {
+  cursor: pointer;
+}

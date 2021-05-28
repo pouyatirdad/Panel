@@ -452,18 +452,18 @@
                             <ul>
 
                                 <li>
-                                    <i class="fa fa-pen"></i>
-                                    <i class="fa fa-trash-alt"></i>
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete() " class="fa fa-trash-alt"></i>
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-pen"></i>
-                                    <i class="fa fa-trash-alt"></i>
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete() " class="fa fa-trash-alt"></i>
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-pen"></i>
-                                    <i class="fa fa-trash-alt"></i>
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete() " class="fa fa-trash-alt"></i>
                                 </li>
                             </ul>
                         </li>
@@ -648,6 +648,62 @@
         </div>
 
     </div>
+
+    <div id="EditModel">
+        <div onclick=" EditFalse() " class="ModelBG">
+
+        </div>
+        <div class="Modal">
+
+            <h3>
+                Edit
+            </h3>
+
+            <div>
+
+                <p>Name :</p>
+                <input placeholder="Alex" />
+
+            </div>
+
+            <div>
+
+                <p>Gender :</p>
+                <div>
+
+                    <p class="mr-5">Male</p>
+                    <input type="checkbox" onclick="Chose()" id="Male">
+                </div>
+                <div>
+
+                    <p class="mr-5">Female</p>
+                    <input type="checkbox" onclick="Chose()" id="Female">
+                </div>
+
+            </div>
+
+            <div>
+
+                <p>Country :</p>
+                <input type="text" placeholder="USA">
+
+            </div>
+
+            <div>
+
+                <p>Date :</p>
+                <input type="date">
+
+            </div>
+
+            <span>
+                <button onclick=" EditFalse() ">Submit</button>
+            </span>
+        </div>
+
+    </div>
+
+    <script src="assets/main.js"></script>
 
 </body>
 
