@@ -1,5 +1,8 @@
 $Fullwidth: 96%;
 
+$greenUP: #1d9afd;
+$redDown: #fd686b;
+
 .StarredPanelCU {
   /* background-color: #fff; */
   width: $Fullwidth;
@@ -29,6 +32,18 @@ $Fullwidth: 96%;
 }
 .INOUTInStarredPage {
   margin: auto;
+  width: 82%;
+}
+
+.UPChart {
+  --color: #66ade7;
+}
+.DownChart {
+  --color: #fd686b;
+}
+
+#AddModel {
+  display: none;
 }
 
 @import "Responsive";

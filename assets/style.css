@@ -35,6 +35,19 @@
 
 .INOUTInStarredPage {
   margin: auto;
+  width: 82%;
+}
+
+.UPChart {
+  --color: #66ade7;
+}
+
+.DownChart {
+  --color: #fd686b;
+}
+
+#AddModel {
+  display: none;
 }
 
 @media screen and (max-width: 1060px) {

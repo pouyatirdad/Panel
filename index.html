@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/charts.css-0.9.0/dist/charts.min.css">
 
     <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/style.css">
@@ -25,7 +22,7 @@
 
                 <ul>
                     <li>
-                        <a href="#">
+                        <a onclick=" Add() " href="#">
                             Add Patient
                         </a>
                     </li>
@@ -86,13 +83,13 @@
 
                 <li>
                     <a href="SpecialPatients.html">
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <i class="far fa-bookmark"></i>
+                        <i class="fas fa-bookmark"></i>
                     </a>
                 </li>
 
@@ -118,7 +115,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="https://google.com">
                         <i class="fas fa-sign-out-alt DangerColor"></i>
                     </a>
                 </li>
@@ -699,6 +696,61 @@
 
             <span>
                 <button onclick=" EditFalse() ">Submit</button>
+            </span>
+        </div>
+
+    </div>
+
+
+    <div id="AddModel">
+        <div onclick=" AddFalse() " class="ModelBG">
+
+        </div>
+        <div class="Modal">
+
+            <h3>
+                Add
+            </h3>
+
+            <div>
+
+                <p>Name :</p>
+                <input placeholder="name" />
+
+            </div>
+
+            <div>
+
+                <p>Gender :</p>
+                <div>
+
+                    <p class="mr-5">Male</p>
+                    <input type="checkbox" onclick="Chose()" id="Male">
+                </div>
+                <div>
+
+                    <p class="mr-5">Female</p>
+                    <input type="checkbox" onclick="Chose()" id="Female">
+                </div>
+
+            </div>
+
+            <div>
+
+                <p>Country :</p>
+                <input type="text" placeholder="country">
+
+            </div>
+
+            <div>
+
+                <p>Date :</p>
+                <input type="date">
+
+            </div>
+
+            <span>
+                <button onclick=" AddFalse() ">Submit</button>
             </span>
         </div>
 

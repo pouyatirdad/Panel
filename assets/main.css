@@ -474,8 +474,20 @@ li {
   margin: 0 auto;
   --color: #209cff;
 }
+#Star5 {
+  height: 50px;
+  max-width: 140px;
+  margin: 0 auto;
+  --color: #209cff;
+}
 
 #orientation-example-6 {
+  height: 50px;
+  max-width: 140px;
+  margin: 0 auto;
+  --color: #e4305d;
+}
+#Star6 {
   height: 50px;
   max-width: 140px;
   margin: 0 auto;

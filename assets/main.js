@@ -9,6 +9,20 @@ function Edit() {
 
 }
 
+function Add() {
+
+    document.getElementById("AddModel").style.display = "block";
+
+}
+
+
+
+function AddFalse() {
+
+    document.getElementById("AddModel").style.display = "none";
+
+}
+
 function EditFalse() {
 
     document.getElementById("EditModel").style.display = "none";
