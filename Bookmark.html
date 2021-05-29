@@ -1,0 +1,521 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/charts.css-0.9.0/dist/charts.min.css">
+
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="MyContainer">
+
+        <div class="topNav">
+            <div class="NavBar FullWidth">
+
+                <ul>
+                    <li>
+                        <a onclick=" Add() " href="javascript:void(0)">
+                            Add Patient
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Treatments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Doctors
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Help
+                        </a>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heartbeat"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-comment"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-bell"></i>
+                            <span class="NumForBell">2</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="leftSide">
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shield-alt AlwaysActive"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home "></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="SpecialPatients.html">
+                        <i class="fas fa-star "></i>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="Bookmark.html">
+                        <i class="fas fa-bookmark active"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-scroll"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://google.com">
+                        <i class="fas fa-sign-out-alt DangerColor"></i>
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+        <div class="main">
+            <div class="MainData StarredPanelCU">
+                <ul class="LeftofMain NotMrRight">
+
+
+                    <li class="NavBarForMain">
+                        <h3>Bookmark's</h3>
+                        <h3>
+                            <i class="fa fa-user-tag"></i>
+                        </h3>
+                    </li>
+
+                    <ul class="tableForLastPatients AddRollInBokmark">
+                        <li>
+                            <div>
+                                NO
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    01
+                                </li>
+                                <li class="Row2">
+                                    02
+                                </li>
+                                <li class="Row3">
+                                    03
+                                </li>
+
+                                <li class="Row1">
+                                    04
+                                </li>
+                                <li class="Row2">
+                                    05
+                                </li>
+                                <li class="Row3">
+                                    06
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Date
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    22/02/2012
+                                </li>
+                                <li class="Row2">
+                                    22/02/2021
+                                </li>
+                                <li class="Row3">
+                                    22/02/2020
+                                </li>
+                                <li class="Row1">
+                                    22/05/2012
+                                </li>
+                                <li class="Row2">
+                                    15/12/2021
+                                </li>
+                                <li class="Row3">
+                                    06/01/2020
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Id
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    BK-81
+                                </li>
+                                <li class="Row2">
+                                    BK-82
+                                </li>
+                                <li class="Row3">
+                                    BK-83
+                                </li>
+                                <li class="Row1">
+                                    BK-84
+                                </li>
+                                <li class="Row2">
+                                    BK-85
+                                </li>
+                                <li class="Row3">
+                                    BK-86
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Name
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    Alex
+                                </li>
+                                <li class="Row2">
+                                    Martin
+                                </li>
+                                <li class="Row3">
+                                    Sara
+                                </li>
+
+                                <li class="Row1">
+                                    David
+                                </li>
+                                <li class="Row2">
+                                    Maran
+                                </li>
+                                <li class="Row3">
+                                    Sozan
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Roll
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    Doctor
+                                </li>
+                                <li class="Row2">
+                                    Patient
+                                </li>
+                                <li class="Row3">
+                                    Nurse
+                                </li>
+
+                                <li class="Row1">
+                                    Nurse
+                                </li>
+                                <li class="Row2">
+                                    Nurse
+                                </li>
+                                <li class="Row3">
+                                    Doctor
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Age
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    29
+                                </li>
+                                <li class="Row2">
+                                    36
+                                </li>
+                                <li class="Row3">
+                                    32
+                                </li>
+                                <li class="Row1">
+                                    25
+                                </li>
+                                <li class="Row2">
+                                    34
+                                </li>
+                                <li class="Row3">
+                                    39
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Country
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    USA
+                                </li>
+                                <li class="Row2">
+                                    Singapor
+                                </li>
+                                <li class="Row3">
+                                    China
+                                </li>
+                                <li class="Row1">
+                                    Italy
+                                </li>
+                                <li class="Row2">
+                                    Germany
+                                </li>
+                                <li class="Row3">
+                                    Spain
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Gender
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    Male
+                                </li>
+                                <li class="Row2">
+                                    Male
+                                </li>
+                                <li class="Row3">
+                                    Female
+                                </li>
+                                <li class="Row1">
+                                    Male
+                                </li>
+                                <li class="Row2">
+                                    Female
+                                </li>
+                                <li class="Row3">
+                                    Female
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                Setting
+                            </div>
+                            <ul>
+
+                                <li class="Row1">
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete(1) " class="fa fa-trash-alt"></i>
+                                </li>
+
+                                <li class="Row2">
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete(2) " class="fa fa-trash-alt"></i>
+                                </li>
+
+                                <li class="Row3">
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete(3) " class="fa fa-trash-alt"></i>
+                                </li>
+                                <li class="Row1">
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete(1) " class="fa fa-trash-alt"></i>
+                                </li>
+
+                                <li class="Row2">
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete(2) " class="fa fa-trash-alt"></i>
+                                </li>
+
+                                <li class="Row3">
+                                    <i onclick=" Edit() " class="fa fa-pen"></i>
+                                    <i onclick=" Delete(3) " class="fa fa-trash-alt"></i>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="EditModel">
+        <div onclick=" EditFalse() " class="ModelBG">
+
+        </div>
+        <div class="Modal">
+
+            <h3>
+                Edit
+            </h3>
+
+            <div>
+
+                <p>Name :</p>
+                <input placeholder="Alex" />
+
+            </div>
+
+            <div>
+
+                <p>Gender :</p>
+                <div>
+
+                    <p class="mr-5">Male</p>
+                    <input type="checkbox" onclick="Chose()" id="Male">
+                </div>
+                <div>
+
+                    <p class="mr-5">Female</p>
+                    <input type="checkbox" onclick="Chose()" id="Female">
+                </div>
+
+            </div>
+
+            <div>
+
+                <p>Country :</p>
+                <input type="text" placeholder="USA">
+
+            </div>
+
+            <div>
+
+                <p>Date :</p>
+                <input type="date">
+
+            </div>
+
+            <span>
+                <button onclick=" EditFalse() ">Submit</button>
+            </span>
+        </div>
+
+    </div>
+
+    <div id="AddModel">
+        <div onclick=" AddFalse() " class="ModelBG">
+
+        </div>
+        <div class="Modal">
+
+            <h3>
+                Add
+            </h3>
+
+            <div>
+
+                <p>Name :</p>
+                <input placeholder="name" />
+
+            </div>
+
+            <div>
+
+                <p>Gender :</p>
+                <div>
+
+                    <p class="mr-5">Male</p>
+                    <input type="checkbox" onclick="Chose()" id="Male">
+                </div>
+                <div>
+
+                    <p class="mr-5">Female</p>
+                    <input type="checkbox" onclick="Chose()" id="Female">
+                </div>
+
+            </div>
+
+            <div>
+
+                <p>Country :</p>
+                <input type="text" placeholder="country">
+
+            </div>
+
+            <div>
+
+                <p>Date :</p>
+                <input type="date">
+
+            </div>
+
+            <span>
+                <button onclick=" AddFalse() ">Submit</button>
+            </span>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/main.js"></script>
+
+</body>
+
+</html>
