@@ -39,7 +39,7 @@ li {
 }
 
 .MyContainer {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: auto;
   display: grid;
   grid-template-areas:
@@ -131,6 +131,9 @@ li {
   color: #048ac5;
   border-right: 2px solid #048ac5;
   position: relative;
+}
+.leftSide ul li.active a {
+  color: #048ac5;
 }
 
 /* .leftSide ul li .active::after {
@@ -347,7 +350,7 @@ li {
 
 .RightofMain ul li {
   border-radius: 5px;
-  height: 80px;
+  height: 85px;
   width: 95%;
   margin: 0px auto 20px auto;
   background-color: #fff;
