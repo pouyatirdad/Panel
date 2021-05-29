@@ -826,3 +826,7 @@ li {
     font-size: 9px;
   }
 }
+
+a:hover {
+  opacity: 0.8;
+}

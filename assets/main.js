@@ -1,6 +1,6 @@
 
-function Delete() {
-    return null;
+function Delete(i) {
+    $(`.Row${i}`).hide(500);
 }
 
 function Edit() {
@@ -18,7 +18,5 @@ function EditFalse() {
 function Chose() {
     var male = document.getElementById("Male");
     var female = document.getElementById("Female");
-
-
 
 }
