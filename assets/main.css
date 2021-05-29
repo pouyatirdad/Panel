@@ -541,3 +541,288 @@ li {
 .fa-pen {
   cursor: pointer;
 }
+
+@media screen and (max-width: 1060px) {
+  .NavBar {
+    background-color: #fff;
+    width: 89%;
+    margin: 10px 10px 0 auto;
+  }
+  .MainData {
+    width: 89%;
+    height: 94%;
+    margin: 0 30px 0 auto;
+  }
+  .tableForLastPatients {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .RightofMain ul li {
+    width: 74%;
+  }
+  .INOUT {
+    width: 74%;
+  }
+  .NavBarForReports {
+    width: 74%;
+    margin: auto;
+  }
+  .LeftofMain {
+    margin-right: -1%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .RightofMain ul li {
+    width: 96%;
+  }
+  .INOUT {
+    width: 96%;
+  }
+  .NavBarForReports {
+    width: 99%;
+    margin: auto;
+  }
+  .LeftofMain {
+    margin-right: -1%;
+  }
+  .MainData {
+    display: flex;
+    flex-direction: column;
+  }
+  .RightofMain ul li div:first-child {
+    display: flex !important;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .RightofMain ul li div:first-child .fa-bell {
+    margin: auto 0 !important;
+  }
+  .RightofMain ul li div:last-child {
+    top: 34px;
+  }
+  .RightofMain ul li div:first-child h3 {
+    overflow: auto;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .NavBar {
+    width: 87%;
+  }
+  .MainData {
+    width: 87%;
+  }
+  .leftSide {
+    width: 5%;
+  }
+  .Modal {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .NavBar {
+    width: 84%;
+  }
+  .MainData {
+    width: 84%;
+  }
+  .leftSide {
+    width: 7%;
+  }
+  .tableForLastPatients li ul {
+    padding: 10px 0;
+  }
+  .tableForLastPatients {
+    display: grid;
+    grid-template-columns: 13.3% 13.3% 13.3% 13.3% 13.3% 13.3% 13.3% 8%;
+  }
+  .tableForLastPatients li div:first-child {
+    padding: 10px 0;
+  }
+  .Modal {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .NavBar {
+    width: 81%;
+  }
+  .MainData {
+    width: 81%;
+  }
+  .leftSide {
+    width: 9%;
+  }
+  .tableForLastPatients li ul {
+    padding: 10px 0;
+  }
+  .tableForLastPatients {
+    display: grid;
+    grid-template-columns: 10.8% 16.3% 13.3% 13.3% 8.3% 13.3% 13.3% 10%;
+  }
+  .tableForLastPatients li div:first-child {
+    padding: 10px 0;
+  }
+  .PTStatistics {
+    padding: 10px 17px;
+  }
+  .SumDataIcon {
+    padding: 10px 17px;
+  }
+  .SumDataIcon .items div h5:first-child {
+    font-size: 10px;
+  }
+  .SumDataIcon .items div h5:last-child {
+    font-size: 14px;
+  }
+  .NavBar ul li {
+    margin-left: 6px;
+    padding: 10px 8px;
+  }
+  .NavBar ul li a {
+    font-size: 12px;
+  }
+  .Modal {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .NavBar {
+    width: 78%;
+    /* margin: 10px 0.1px 0 auto; */
+  }
+  .MainData {
+    width: 81%;
+    margin: 0 20px 0 auto;
+  }
+  .leftSide {
+    width: 9%;
+  }
+  .tableForLastPatients li ul {
+    padding: 10px 0;
+  }
+  .tableForLastPatients {
+    display: grid;
+    grid-template-columns: 8.8% 17.3% 16.3% 10.3% 8.3% 13.3% 13.3% 12%;
+  }
+  .tableForLastPatients li {
+    font-size: 11;
+    font-weight: 600;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 11px;
+  }
+  .tableForLastPatients li div:first-child {
+    padding: 10px 0;
+  }
+  .PTStatistics {
+    padding: 10px 17px;
+  }
+  .SumDataIcon {
+    padding: 10px 2px;
+  }
+  .SumDataIcon .items div h5:first-child {
+    font-size: 7px;
+    text-align: center;
+  }
+  .SumDataIcon .items div h5:last-child {
+    font-size: 11px;
+  }
+  .NavBar ul li {
+    margin-left: 4px;
+    padding: 10px 3px;
+  }
+  .NavBar ul li a {
+    font-size: 11px;
+  }
+  .leftSide {
+    width: 7%;
+  }
+  /* .leftSide ul:first-child {
+    position: relative;
+    left: -8px;
+  } */
+  .leftSide ul:first-child li:first-child a {
+    position: relative;
+    left: -7px;
+  }
+  .leftSide ul:first-child li:first-child a {
+    padding: 5px 7px;
+  }
+  .RightofMain ul li {
+    width: 90%;
+  }
+  .INOUT {
+    width: 90%;
+  }
+  .Modal {
+    left: 3%;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .Modal {
+    left: 12%;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .Modal {
+    left: 6%;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .Modal {
+    left: 1%;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 316px) {
+  .PTStatistics {
+    padding: 10px 6px;
+  }
+  .leftSide {
+    padding: 20px 0 20px 8px;
+  }
+  .NavBar ul li a {
+    font-size: 8px;
+    font-weight: 500;
+  }
+  .NumForBell {
+    position: absolute;
+    top: 4px;
+    right: -6px;
+    background-color: #e4305d;
+    color: white;
+    padding: 3px 6px;
+    font-size: 7px;
+    border-radius: 20px;
+  }
+  .PTStatistics ul:nth-child(2) li:first-child div:first-child {
+    font-size: 10px;
+  }
+  .SumDataIcon .items div h5:first-child {
+    text-align: center;
+  }
+  .RightofMain ul li div:last-child {
+    top: 15px;
+  }
+
+  .tableForLastPatients li {
+    font-size: 9;
+    font-weight: 600;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 9px;
+  }
+}
