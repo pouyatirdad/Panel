@@ -1,0 +1,222 @@
+#AddModel {
+  display: none;
+}
+.AddModal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 10%;
+  z-index: 102;
+  width: 100%;
+}
+.AddModal section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AddModal article:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 2px 32px 10px 0px #f4f1f2af;
+  width: 485px;
+}
+.BottomBtnInModel {
+  position: fixed;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  z-index: 120;
+  background-color: #a8a8a8;
+}
+.BottomBtnInModel div {
+  display: flex;
+  justify-content: center;
+}
+.BottomBtnInModel a {
+  padding: 14px 30px;
+  border-radius: 26px;
+  z-index: 120;
+  font-size: 16px;
+  font-weight: 700;
+}
+.BottomBtnInModel a:first-child {
+  border: 1px solid #038bc6;
+  color: #038bc6;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.BottomBtnInModel a:last-child {
+  background-color: #038bc6;
+  color: white;
+}
+.AddModal article:first-child p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(182, 182, 182);
+}
+.AddModal article:first-child p:last-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(122, 122, 122);
+}
+.AddModal article:first-child aside {
+  width: 41%;
+}
+.AddModal article:first-child aside:first-child {
+  margin-top: 10px;
+}
+.AddModal article:first-child aside:first-child div:first-child {
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 0 0 10px 0;
+}
+.AddModal article:first-child aside:first-child div:last-child {
+  padding: 10px 0 0px 0;
+}
+
+.AddModal article:first-child aside:last-child div:first-child {
+  border-bottom: 1px solid rgb(182, 182, 182);
+  padding: 0 0 10px 0;
+  text-align: right;
+}
+
+.AddModal article:first-child aside:last-child div:first-child img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin-right: 10px;
+  //   position: relative;
+  //   right: -17px;
+}
+
+.AddModal article:first-child aside:first-child div:last-child {
+  padding: 10px 0 0px 0;
+}
+
+.AddModal article:first-child aside:last-child div:last-child {
+  padding: 10px 0 0px 0;
+}
+
+.AddModal article:last-child {
+  background-color: #fff;
+  padding: 20px 29px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.AddModal article:last-child aside:first-child {
+  display: flex;
+  justify-content: flex-start;
+  //   padding: 0 0 20px 0;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.699);
+}
+
+.AddModal article:last-child aside:first-child h3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.877);
+}
+
+.AddModal article:last-child aside:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.AddModal article:last-child aside:nth-child(2) p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid #d6d6d6;
+  color: #7a7a7a;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+}
+
+.date {
+  padding: 11px;
+  border-radius: 16px;
+  border: 1px solid #d6d6d6;
+  color: #7a7a7a;
+  width: 100%;
+}
+input:focus {
+  border-radius: 16px !important;
+  border: 2px solid #5a5a5a91 !important;
+  outline: none;
+  box-shadow: none;
+}
+input::placeholder {
+  color: #d6d6d6;
+}
+
+.AddModal article:last-child aside:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+
+.AddModal article:last-child aside:nth-child(3) div {
+  width: 190px;
+}
+
+.AddModal article:last-child aside:nth-child(3) div p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+  margin-bottom: 5px;
+}
+
+.AddModal article:last-child aside:nth-child(3) div:first-child {
+  margin-right: 10px;
+}
+
+.AddModal article:last-child aside:nth-child(3) div:nth-child(2) {
+  margin-right: 10px;
+}
+
+.AddModal article:last-child aside:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.AddModal article:last-child aside:nth-child(4) h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+
+.AddModal article:last-child aside:nth-child(4) div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.AddModal article:last-child aside:nth-child(4) div p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8f8f8f;
+  margin-right: 7px;
+}

@@ -46,10 +46,6 @@
   --color: #fd686b;
 }
 
-#AddModel {
-  display: none;
-}
-
 .AddRollInBokmark {
   display: -ms-grid;
   display: grid;
@@ -58,64 +54,302 @@
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 1060px) {
-  .AddRollInBokmark {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr !important;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr !important;
-    margin-bottom: 20px;
-  }
+#AddModel {
+  display: none;
 }
 
-@media only screen and (max-width: 737px) {
-  .AddRollInBokmark {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.5fr 1fr 10% 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr !important;
-        grid-template-columns: 0.5fr 1fr 10% 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr !important;
-    margin-bottom: 20px;
-  }
+.AddModal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 10%;
+  z-index: 102;
+  width: 100%;
 }
 
-@media only screen and (max-width: 631px) {
-  .AddRollInBokmark {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.5fr 1fr 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
-        grid-template-columns: 0.5fr 1fr 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
-    margin-bottom: 20px;
-  }
-  .tableForLastPatients li ul li {
-    font-size: 11px !important;
-  }
+.AddModal section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media only screen and (max-width: 631px) {
-  .AddRollInBokmark {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
-        grid-template-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
-    margin-bottom: 20px;
-  }
-  .tableForLastPatients li ul li {
-    font-size: 10px !important;
-  }
+.AddModal article:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  text-align: left;
+  -webkit-box-shadow: 2px 32px 10px 0px #f4f1f2af;
+          box-shadow: 2px 32px 10px 0px #f4f1f2af;
+  width: 485px;
 }
 
-@media only screen and (max-width: 376px) {
-  .AddRollInBokmark {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
-        grid-template-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
-    margin-bottom: 20px;
-  }
-  .tableForLastPatients li ul li {
-    font-size: 8px !important;
-    font-weight: 600;
-  }
+.BottomBtnInModel {
+  position: fixed;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  z-index: 120;
+  background-color: #a8a8a8;
+}
+
+.BottomBtnInModel div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.BottomBtnInModel a {
+  padding: 14px 30px;
+  border-radius: 26px;
+  z-index: 120;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.BottomBtnInModel a:first-child {
+  border: 1px solid #038bc6;
+  color: #038bc6;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.BottomBtnInModel a:last-child {
+  background-color: #038bc6;
+  color: white;
+}
+
+.AddModal article:first-child p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b6b6b6;
+}
+
+.AddModal article:first-child p:last-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+
+.AddModal article:first-child aside {
+  width: 41%;
+}
+
+.AddModal article:first-child aside:first-child {
+  margin-top: 10px;
+}
+
+.AddModal article:first-child aside:first-child div:first-child {
+  border-bottom: 1px solid #b6b6b6;
+  padding: 0 0 10px 0;
+}
+
+.AddModal article:first-child aside:first-child div:last-child {
+  padding: 10px 0 0px 0;
+}
+
+.AddModal article:first-child aside:last-child div:first-child {
+  border-bottom: 1px solid #b6b6b6;
+  padding: 0 0 10px 0;
+  text-align: right;
+}
+
+.AddModal article:first-child aside:last-child div:first-child img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.AddModal article:first-child aside:first-child div:last-child {
+  padding: 10px 0 0px 0;
+}
+
+.AddModal article:first-child aside:last-child div:last-child {
+  padding: 10px 0 0px 0;
+}
+
+.AddModal article:last-child {
+  background-color: #fff;
+  padding: 20px 29px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 450px;
+}
+
+.AddModal article:last-child aside:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.699);
+}
+
+.AddModal article:last-child aside:first-child h3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.877);
+}
+
+.AddModal article:last-child aside:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
+}
+
+.AddModal article:last-child aside:nth-child(2) p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid #d6d6d6;
+  color: #7a7a7a;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+}
+
+.date {
+  padding: 11px;
+  border-radius: 16px;
+  border: 1px solid #d6d6d6;
+  color: #7a7a7a;
+  width: 100%;
+}
+
+input:focus {
+  border-radius: 16px !important;
+  border: 2px solid #5a5a5a91 !important;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #d6d6d6;
+}
+
+input:-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+input::-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+input::placeholder {
+  color: #d6d6d6;
+}
+
+.AddModal article:last-child aside:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.AddModal article:last-child aside:nth-child(3) div {
+  width: 190px;
+}
+
+.AddModal article:last-child aside:nth-child(3) div p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+  margin-bottom: 5px;
+}
+
+.AddModal article:last-child aside:nth-child(3) div:first-child {
+  margin-right: 10px;
+}
+
+.AddModal article:last-child aside:nth-child(3) div:nth-child(2) {
+  margin-right: 10px;
+}
+
+.AddModal article:last-child aside:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.AddModal article:last-child aside:nth-child(4) h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+
+.AddModal article:last-child aside:nth-child(4) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.AddModal article:last-child aside:nth-child(4) div p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8f8f8f;
+  margin-right: 7px;
 }
 
 @media screen and (max-width: 1060px) {
@@ -418,6 +652,66 @@
   }
   .tableForLastPatients li ul li {
     font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .AddRollInBokmark {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 737px) {
+  .AddRollInBokmark {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 1fr 10% 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr !important;
+        grid-template-columns: 0.5fr 1fr 10% 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 631px) {
+  .AddRollInBokmark {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 1fr 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+        grid-template-columns: 0.5fr 1fr 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+    margin-bottom: 20px;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 11px !important;
+  }
+}
+
+@media only screen and (max-width: 631px) {
+  .AddRollInBokmark {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+        grid-template-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+    margin-bottom: 20px;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .AddRollInBokmark {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+        grid-template-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+    margin-bottom: 20px;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 8px !important;
+    font-weight: 600;
   }
 }
 /*# sourceMappingURL=style.css.map */

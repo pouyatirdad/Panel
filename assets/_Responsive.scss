@@ -282,3 +282,53 @@
     font-size: 9px;
   }
 }
+
+@media only screen and (max-width: 1060px) {
+  .AddRollInBokmark {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr 0.5fr !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 737px) {
+  .AddRollInBokmark {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 10% 0.5fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 631px) {
+  .AddRollInBokmark {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+    margin-bottom: 20px;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 11px !important;
+  }
+}
+
+@media only screen and (max-width: 631px) {
+  .AddRollInBokmark {
+    display: grid;
+    grid-template-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+    margin-bottom: 20px;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .AddRollInBokmark {
+    display: grid;
+    grid-template-columns: 0.5fr 10% 10% 0.5fr 10% 0.5fr 0.5fr 10% 10% !important;
+    margin-bottom: 20px;
+  }
+  .tableForLastPatients li ul li {
+    font-size: 8px !important;
+    font-weight: 600;
+  }
+}

@@ -706,52 +706,102 @@
         <div onclick=" AddFalse() " class="ModelBG">
 
         </div>
-        <div class="Modal">
 
-            <h3>
-                Add
-            </h3>
+        <div class="AddModal">
+            <section>
 
+                <article>
+
+                    <aside>
+                        <div>
+                            <p>
+                                Adding by
+                            </p>
+                            <p>
+                                Marlyn Manson
+                            </p>
+                        </div>
+                        <div>
+                            <p>Income</p>
+                            <p>23,000$</p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div>
+                            <img src="assets/pics/marilyn-manson-1.jpg" alt="userPhoto">
+                        </div>
+                        <div>
+                            <p>Outcome</p>
+                            <p>90,000$</p>
+                        </div>
+                    </aside>
+
+                </article>
+
+                <article>
+                    <aside>
+                        <h3>
+                            Add New Patient
+                        </h3>
+                    </aside>
+                    <aside>
+                        <p>
+                            Name
+                        </p>
+                        <input type="text" placeholder="Name" />
+                    </aside>
+                    <aside>
+                        <div>
+                            <p>
+                                Age
+                            </p>
+                            <input type="number" pattern="/^-?\d+\.?\d*$/"
+                                onKeyPress="if(this.value.length==2) return false;" placeholder="Age" />
+                        </div>
+                        <div>
+                            <p>
+                                Country
+                            </p>
+                            <input type="text" placeholder="Country" />
+                        </div>
+                        <div>
+                            <p>
+                                Date
+                            </p>
+                            <input class="date" type="date" placeholder="Country" />
+                        </div>
+                    </aside>
+                    <aside>
+                        <h3>
+                            Gender :
+                        </h3>
+                        <div>
+                            <p>
+                                Male
+                            </p>
+                            <input type="checkbox" />
+                        </div>
+                        <div>
+                            <p>
+                                Female
+                            </p>
+                            <input type="checkbox" />
+                        </div>
+                    </aside>
+                </article>
+            </section>
+
+        </div>
+
+        <div class="BottomBtnInModel">
             <div>
-
-                <p>Name :</p>
-                <input placeholder="name" />
-
+                <a onclick=" AddFalse() " href="javascript:void(0)">
+                    Cancel
+                </a>
+                <a onclick=" alert(`done`) , AddFalse() " href=" javascript:void(0)">
+                    Add Patient
+                </a>
             </div>
-
-            <div>
-
-                <p>Gender :</p>
-                <div>
-
-                    <p class="mr-5">Male</p>
-                    <input type="checkbox" onclick="Chose()" id="Male">
-                </div>
-                <div>
-
-                    <p class="mr-5">Female</p>
-                    <input type="checkbox" onclick="Chose()" id="Female">
-                </div>
-
-            </div>
-
-            <div>
-
-                <p>Country :</p>
-                <input type="text" placeholder="country">
-
-            </div>
-
-            <div>
-
-                <p>Date :</p>
-                <input type="date">
-
-            </div>
-
-            <span>
-                <button onclick=" AddFalse() ">Submit</button>
-            </span>
         </div>
 
     </div>

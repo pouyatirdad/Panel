@@ -34,3 +34,7 @@ function Chose() {
     var female = document.getElementById("Female");
 
 }
+
+$('input[type="checkbox"]').on('change', function () {
+    $('input[type="checkbox"]').not(this).prop('checked', false);
+});
