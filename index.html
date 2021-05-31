@@ -708,9 +708,9 @@
         </div>
 
         <div class="AddModal">
-            <section>
+            <section class="CanClose">
 
-                <article>
+                <article class="CantClose">
 
                     <aside>
                         <div>
@@ -738,7 +738,7 @@
 
                 </article>
 
-                <article>
+                <article class="CantClose">
                     <aside>
                         <h3>
                             Add New Patient
@@ -791,18 +791,19 @@
                 </article>
             </section>
 
+            <div class="BottomBtnInModel  CanClose">
+                <div>
+                    <a onclick=" AddFalse() " href="javascript:void(0)">
+                        Cancel
+                    </a>
+                    <a onclick=" alert(`done`) , AddFalse() " href=" javascript:void(0)">
+                        Add Patient
+                    </a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="BottomBtnInModel">
-            <div>
-                <a onclick=" AddFalse() " href="javascript:void(0)">
-                    Cancel
-                </a>
-                <a onclick=" alert(`done`) , AddFalse() " href=" javascript:void(0)">
-                    Add Patient
-                </a>
-            </div>
-        </div>
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

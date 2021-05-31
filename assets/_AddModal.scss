@@ -5,9 +5,13 @@
   position: fixed;
   left: 0;
   right: 0;
-  top: 10%;
+  top: -100%;
   z-index: 102;
   width: 100%;
+  transition: all 0.9s;
+}
+.ModalActive {
+  top: 10% !important;
 }
 .AddModal section {
   display: flex;
@@ -24,7 +28,6 @@
   border-radius: 7px;
   margin-bottom: 20px;
   text-align: left;
-  box-shadow: 2px 32px 10px 0px #f4f1f2af;
   width: 485px;
 }
 .BottomBtnInModel {

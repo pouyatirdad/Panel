@@ -5,13 +5,14 @@ function Delete(i) {
 
 function Edit() {
 
-    document.getElementById("EditModel").style.display = "block";
+    $("#EditModel").show(500);
 
 }
 
 function Add() {
 
-    document.getElementById("AddModel").style.display = "block";
+    $("#AddModel").show(500);
+    $(".AddModal").addClass("ModalActive");
 
 }
 
@@ -19,22 +20,28 @@ function Add() {
 
 function AddFalse() {
 
-    document.getElementById("AddModel").style.display = "none";
+    $(".AddModal").removeClass("ModalActive");
+    $("#AddModel").hide(700);
 
 }
 
 function EditFalse() {
 
-    document.getElementById("EditModel").style.display = "none";
-
-}
-
-function Chose() {
-    var male = document.getElementById("Male");
-    var female = document.getElementById("Female");
+    $("#EditModel").hide(500);
 
 }
 
 $('input[type="checkbox"]').on('change', function () {
     $('input[type="checkbox"]').not(this).prop('checked', false);
+});
+
+
+$(".CanClose").click(function () {
+    $(window).one("click", function () {
+        AddFalse();
+    })
+})
+
+$('.CantClose').click(function (event) {
+    event.stopPropagation();
 });
